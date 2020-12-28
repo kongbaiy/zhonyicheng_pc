@@ -1,0 +1,148 @@
+//------------------------------变量------------------------------------------------
+$baseColor:#2c67B1;
+$color38BE58:#38BE58;
+$colorE1AA31:#E1AA31;
+
+//------------------------------公共样式------------------------------------------------
+body,
+ul,
+li,
+dl,
+dt,
+dd,
+p,
+ol,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+form,
+img,
+table,
+fieldset,
+legend,
+input,
+textarea,
+iframe{
+  margin: 0;
+  padding: 0;
+}
+
+iframe {
+	width: 100%;
+	height: auto;
+	border: none;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+a {
+  outline: none;
+  text-decoration: none;
+  color: #333;
+  text-decoration: none;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-user-select: none;
+  -moz-user-focus: none;
+  -moz-user-select: none;
+}
+
+a:hover,a:active,a:visited,a:link,a:focus{
+    -webkit-tap-highlight-color: transparent;
+    outline:none;
+    background: none;
+    text-decoration: none;
+	color: #333;
+}
+
+a {
+  color: black;
+
+  &:hover,
+  &:focus {
+    text-decoration: none;
+  }
+}
+
+img,
+input,
+button {
+  border: none;
+}
+
+div, p, img, span {
+	-moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    -khtml-user-select: none;
+	user-select: none;
+}
+
+html body input, html body button, html body textarea{
+	outline: none;
+}
+
+textarea{
+	resize: none;
+	border: 0;
+}
+
+input, textarea{
+	-webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+}
+
+#app {
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+//------------------------------私有样式------------------------------------------------
+/**首页**/
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 260px;
+  background-color: rgba(0,0,0,0.7);
+}
+
+.nav_logo {
+  width: 198px;
+}
+
+.nav-list {
+  overflow: hidden;
+  height: 100%;
+}
+
+.nav-list-item {
+  float: left;
+  margin-right: 50px;
+}
+
+.nav-list-item a {
+  box-sizing: border-box;
+  display: block;
+  padding: 40px 8px 30px 8px;
+  height: 90px;
+  border-bottom: 4px solid transparent;
+  font-size: 16px;
+  font-family: Source Han Sans CN;
+  font-weight: 400;
+  color: #fff;
+}
+
+.nav-list-item_active a {
+  border-color: #fff;
+}
+
+
+.banner-img {
+  width: 100%;
+}
