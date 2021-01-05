@@ -1,0 +1,270 @@
+.advertising-img {
+  display: block;
+  width: 100%;
+}
+
+.contact {
+  margin: auto;
+  padding: 50px 0 70px;
+  width: 1200px;
+}
+
+.contact-title {
+  padding-bottom: 20px;
+  border-bottom: 1px solid #E6E6E6;
+  font-size: 24px;
+  font-family: Source Han Sans CN;
+  font-weight: 500;
+  color: #262626;
+}
+
+.contact-cell {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.form {
+  width: 660px;
+}
+
+.form-title,
+.contact-address-title {
+  padding-bottom: 10px;
+  font-size: 20px;
+  font-family: Source Han Sans CN;
+  font-weight: 500;
+  color: #262626;
+}
+
+.form-cell {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.form-cell .form-input:first-child {
+  margin-right: 20px;
+}
+
+.form-input {
+  box-sizing: border-box;
+  padding: 0 10px;
+  width: 320px;
+  height: 50px;
+  border: 1px solid #F0F0F0;
+  font-size: 14px;
+  font-family: Source Han Sans CN;
+  font-weight: 400;
+  color: #262626;
+}
+
+.form-input::placeholder {
+  color: #ccc;
+}
+
+.form-select {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  padding: 0 10px;
+  width: 320px;
+  height: 50px;
+  border: 1px solid #F0F0F0;
+  cursor: pointer;
+}
+
+.form-select span {
+  font-size: 14px;
+  font-family: Source Han Sans CN;
+  font-weight: 400;
+  color: #262626;
+}
+
+.form-select_active span {
+  color: #262626;
+}
+
+.bottom-arrows-icon {
+  transition: all 200ms;
+  width: 10px;
+}
+
+.form-select-list {
+  display: none;
+  position: absolute;
+  top: 40px;
+  left: 0;
+  width: 100%;
+  outline: 1px solid #F0F0F0;
+  background-color: #fff;
+}
+
+.form-select-listItem {
+  padding: 13px 10px;
+  font-size: 14px;
+  font-family: Source Han Sans CN;
+  font-weight: 400;
+  color: #999;
+}
+
+.form-select:hover .form-select-list {
+  display: block;
+}
+
+.form-select:hover .bottom-arrows-icon {
+  transform: rotate(180deg);
+}
+
+.form-select-listItem:hover {
+  color: #333;
+}
+
+.form-textareaBox {
+  box-sizing: border-box;
+  margin-top: 20px;
+  padding: 18px 10px;
+  height: 150px;
+  border: 1px solid #F0F0F0;
+}
+
+.form-textarea {
+  width: 100%;
+  height: 100%;
+  font-size: 14px;
+  font-family: Source Han Sans CN;
+  font-weight: 400;
+  color: #262626;
+}
+
+.form-textarea::placeholder {
+  color: #ccc;
+}
+
+.form-submit {
+  margin-top: 20px;
+  width: 100%;
+  height: 60px;
+  background-color: #A71A20;
+  font-size: 20px;
+  font-family: Source Han Sans CN;
+  font-weight: 400;
+  line-height: 60px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.contact-address-list {
+  overflow: hidden;
+  margin-top: 5px;
+}
+
+.contact-address-listItem {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  font-size: 14px;
+  font-family: Source Han Sans CN;
+  font-weight: 400;
+  color: #262626;
+}
+
+.contact-address-listItemIcon {
+  margin-right: 10px;
+  width: 25px;
+  height: 25px;
+}
+
+.qr-codeBox {
+  display: inline-block;
+  margin-top: 40px;
+  font-size: 0;
+}
+
+.qr-code-img {
+  width: 120px;
+  height: 120px;
+}
+
+.qr-code-text {
+  margin-top: 20px;
+  font-size: 14px;
+  font-family: Source Han Sans CN;
+  font-weight: 400;
+  text-align: center;
+  color: #262626;
+}
+
+.map-img {
+  display: block;
+  width: 100%;
+}
+
+.filiale-box {
+  height: 610px;
+  background-image: url('/assets/imgs/filiale.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.filiale {
+  overflow: hidden;
+  box-sizing: border-box;
+  position: relative;
+  z-index: 2;
+  top: -100px;
+  margin: auto;
+  padding: 30px 20px;
+  width: 1200px;
+  background-color: #fff;
+  box-shadow: 2px 2px 20px 1px rgba(0, 0, 0, 0.2);
+}
+
+.filiale-item {
+  float: left;
+  box-sizing: border-box;
+  margin-right: 30px;
+  padding: 30px;
+  width: 360px;
+  height: 260px;
+  border: 1px solid #F0F0F0;
+}
+
+.filiale-item:nth-child(3n) {
+  margin-right: 0;
+}
+
+.filiale-item:nth-child(n + 4) {
+  margin-top: 30px;
+}
+
+.filiale-item-title {
+  padding-top: 10px;
+  padding-bottom: 5px;
+  font-size: 22px;
+  font-family: Source Han Sans CN;
+  font-weight: 500;
+  color: #262626;
+}
+
+.filiale-item-text {
+  display: flex;
+  margin-top: 15px;
+  font-size: 14px;
+  font-family: Source Han Sans CN;
+  font-weight: 400;
+  line-height: 24px;
+  color: #262626;
+  cursor: pointer;
+}
+
+.filiale-item-icon {
+  margin-right: 10px;
+  min-width: 25px;
+  height: 25px;
+  object-fit: contain;
+}

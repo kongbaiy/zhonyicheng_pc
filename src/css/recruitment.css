@@ -1,0 +1,1044 @@
+.advertising-img {
+  display: block;
+  width: 100%;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 35px;
+  background-color: #F7F7F7;
+}
+
+.nav-item {
+  margin-right: 20px;
+  width: 160px;
+  height: 50px;
+  border: 1px solid #ccc;
+  border-radius: 25px;
+  font-size: 16px;
+  font-family: Source Han Sans CN;
+  font-weight: 400;
+  line-height: 49px;
+  text-align: center;
+  color: #262626;
+  cursor: pointer;
+}
+
+.nav-item:last-child {
+  margin-right: 0;
+}
+
+.nav-item_active {
+  border-color: #A71A20;
+  background-color: #A71A20;
+  color: #fff;
+}
+
+/* 职业发展规划 */
+.developing-plan {
+  padding-top: 70px;
+}
+
+.developing-plan-title {
+  font-size: 40px;
+  font-family: Source Han Sans CN;
+  font-weight: bold;
+  text-align: center;
+  color: #262626;
+}
+
+.developing-plan-text {
+  margin-top: 15px;
+  font-size: 16px;
+  font-family: Source Han Sans CN;
+  font-weight: 400;
+  text-align: center;
+  color: #262626;
+}
+
+.developing-plan-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.developing-plan-listItem {
+  margin-right: 60px;
+  width: 360px;
+  background-color: #F7F7F7;
+}
+
+.developing-plan-listItem:last-child {
+  margin-right: 0;
+}
+
+.developing-plan-listItemInfo {
+  box-sizing: border-box;
+  padding: 40px 30px;
+  height: 220px;
+}
+
+.developing-plan-listItemTitle {
+  position: relative;
+  padding-bottom: 20px;
+  font-size: 24px;
+  font-family: Source Han Sans CN;
+  font-weight: 500;
+  line-height: 21px;
+  text-align: center;
+  color: #262626;
+}
+
+.developing-plan-listItemTitle::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 40px;
+  height: 2px;
+  background-color: #262626;
+}
+
+.developing-plan-listItemText {
+  margin-top: 20px;
+  font-size: 14px;
+  font-family: Source Han Sans CN;
+  font-weight: 400;
+  line-height: 30px;
+  text-align: center;
+  color: #999;
+}
+
+.developing-plan-listItemImg {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+/* 薪酬福利 */
+.developing-plan-salaryWelfare {
+  display: flex;
+  margin-top: 70px;
+  background-image: url('/assets/imgs/1920-790.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  font-size: 0;
+}
+
+.developing-plan-salaryWelfareImg {
+  width: 780px;
+  object-fit: cover;
+}
+
+.developing-plan-salaryWelfareInfo {
+  padding: 70px 100px;
+}
+
+.developing-plan-salaryWelfareInfo .c-module1-title {
+  margin: 0;
+}
+
+.developing-plan-salaryWelfareList {
+  overflow: hidden;
+  margin-top: 5px;
+}
+
+.developing-plan-salaryWelfareListItem {
+  float: left;
+  margin-top: 35px;
+  margin-right: 60px;
+  width: 310px;
+  height: 160px;
+}
+
+.developing-plan-salaryWelfareListItem:nth-child(2n) {
+  margin-right: 0;
+}
+
+.developing-plan-salaryWelfareListItemIcon {
+  width: 60px;
+  height: 60px;
+}
+
+.developing-plan-salaryWelfareListItemTitle {
+  margin-top: 15px;
+  font-size: 20px;
+  font-family: Source Han Sans CN;
+  font-weight: 500;
+  color: #262626;
+}
+
+.developing-plan-salaryWelfareListItemText {
+  margin-top: 10px;
+  font-size: 14px;
+  font-family: Source Han Sans CN;
+  font-weight: 400;
+  line-height: 26px;
+  color: #999;
+}
+
+/* 普升体系 */
+.developing-plan-promotionSystem {
+  padding: 70px 0;
+  background-image: url('/assets/imgs/1920-500.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.developing-plan-promotionSystemTitle {
+  font-size: 40px;
+  font-family: Source Han Sans CN;
+  font-weight: bold;
+  line-height: 21px;
+  text-align: center;
+  color: #262626;
+}
+
+.developing-plan-promotionSystemText {
+  margin-top: 25px;
+  font-size: 16px;
+  font-family: Source Han Sans CN;
+  font-weight: 400;
+  line-height: 21px;
+  text-align: center;
+  color: #262626;
+}
+
+.developing-plan-promotionSystemList {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  margin: 40px auto 0;
+  padding: 10px 80px 20px;
+  width: 1200px;
+  background-color: #fff;
+  box-shadow: 2px 2px 20px 1px rgba(0, 0, 0, 0.2);
+}
+
+.developing-plan-promotionSystemListItem {
+  font-size: 0;
+}
+
+.developing-plan-promotionSystemListItemIcon {
+  width: 155px;
+  height: 155px;
+}
+
+.developing-plan-promotionSystemListItemText {
+  font-size: 20px;
+  font-family: Source Han Sans CN;
+  font-weight: 500;
+  line-height: 34px;
+  text-align: center;
+  color: #262626;
+}
+
+.developing-plan-promotionSystemArrowsIcon  {
+  margin: 0 50px;
+  width: 40px;
+  height: 40px;
+}
+
+/* 办公环境 */
+.office-environment {
+  padding: 70px 0;
+}
+
+.office-environment-imgBox {
+  overflow: hidden;
+  margin: 40px auto 0;
+  width: 1200px;
+}
+
+.office-environment-imgLeft {
+  float: left;
+  width: 350px;
+  height: 465px;
+}
+
+.office-environment-imgRight {
+  float: left;
+  margin-left: 15px;
+}
+
+.office-environment-imgCell {
+  font-size: 0;
+}
+
+.office-environment-imgCell:nth-child(n + 2) {
+  margin-top: 15px;
+}
+
+.office-environment-img1 {
+  width: 350px;
+  height: 225px;
+  object-fit: cover;
+}
+
+.office-environment-img2 {
+  width: 470px;
+  height: 225px;
+  object-fit: cover;
+}
+
+.office-environment-imgCell img:first-child {
+  margin-right: 15px;
+}
+
+/* 招聘流程 */
+.developing-plan-recruitmentProcess {
+  padding-top: 70px;
+  padding-bottom: 99px;
+  background-image: url('/assets/imgs/1920-490.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.developing-plan-recruitmentProcessList {
+  overflow: hidden;
+  margin: 50px auto 0;
+  width: 1200px;
+}
+
+.developing-plan-recruitmentProcessListItem {
+  float: left;
+  box-sizing: border-box;
+  position: relative;
+  padding: 45px 35px 35px;
+  width: 270px;
+  height: 200px;
+  border: 4px solid #fff;
+  font-size: 16px;
+  font-family: Source Han Sans CN;
+  font-weight: 400;
+  line-height: 32px;
+  text-align: center;
+  color: #fff;
+}
+
+.developing-plan-recruitmentProcessListItem:nth-child(n + 2) {
+  margin-left: 40px;
+}
+
+.developing-plan-recruitmentProcessListItemNum {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 120px;
+  font-family: DIN;
+  font-weight: 900;
+  line-height: 24px;
+  color: rgba(255,255,255,0.2);
+}
+
+/* 社会招聘 */
+.social-recruitment_talent-concept {
+  overflow: hidden;
+}
+
+.social-recruitment_talent-concept-title {
+  margin-top: 70px;
+  font-size: 40px;
+  font-family: Source Han Sans CN;
+  font-weight: bold;
+  text-align: center;
+  color: #262626;
+}
+
+.social-recruitment_talent-concept-list {
+  position: relative;
+  margin: 40px auto 0;
+  width: 1200px;
+}
+
+.social-recruitment_talent-concept-list::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.social-recruitment_talent-concept-listItem {
+  transition: all 200ms;
+  box-sizing: border-box;
+  float: left;
+  position: relative;
+  top: 0;
+  display: flex;
+  margin-right: 30px;
+  padding: 35px;
+  width: 380px;
+  height: 170px;
+  background-color: #f7f7f7;
+  cursor: pointer;
+}
+
+.social-recruitment_talent-concept-listItem:nth-child(3n) {
+  margin-right: 0;
+}
+
+.social-recruitment_talent-concept-listItem:nth-child(n + 4) {
+  margin-top: 30px;
+}
+
+.social-recruitment_talent-concept-listItemImg,
+.social-recruitment_talent-concept-listItemImg2 {
+  margin-top: 20px;
+  margin-right: 35px;
+  width: 60px;
+  height: 60px;
+}
+
+.social-recruitment_talent-concept-listItemImg2 {
+  display: none;
+}
+
+.social-recruitment_talent-concept-listItemTitle {
+  position: relative;
+  padding-bottom: 15px;
+  font-size: 20px;
+  font-family: Source Han Sans CN;
+  font-weight: 500;
+  color: #262626;
+}
+
+.social-recruitment_talent-concept-listItemTitle::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 30px;
+  height: 2px;
+  background-color: #999;
+}
+
+.social-recruitment_talent-concept-listItemText {
+  margin-top: 10px;
+  font-size: 14px;
+  font-family: Source Han Sans CN;
+  font-weight: 400;
+  line-height: 30px;
+  color: #999;
+}
+
+.social-recruitment_talent-concept-listItem:hover {
+  top: -10px;
+  background-color: #A71A20;
+  box-shadow: 2px 2px 20px 1px rgba(0, 0, 0, 0.2);
+}
+
+.social-recruitment_talent-concept-listItem:hover * {
+  color: #fff;
+}
+
+.social-recruitment_talent-concept-listItem:hover .social-recruitment_talent-concept-listItemTitle::before {
+  background-color: #fff;
+}
+
+.social-recruitment_talent-concept-listItem:hover .social-recruitment_talent-concept-listItemImg {
+  display: none;
+}
+
+.social-recruitment_talent-concept-listItem:hover .social-recruitment_talent-concept-listItemImg2 {
+  display: block;
+}
+/* 社会招聘-办公环境 */
+.social-recruitment_office-environment {
+  display: flex;
+  margin-top: 70px;
+  font-size: 0;
+}
+
+.social-recruitment_office-environmentImg1 {
+  width: 690px;
+  height: 720px;
+  object-fit: cover;
+}
+
+.social-recruitment_office-environmentCell {
+  font-size: 0;
+}
+
+.social-recruitment_office-environmentImg2 {
+  width: 435px;
+  height: 370px;
+  object-fit: cover;
+}
+
+.social-recruitment_office-environmentImg3 {
+  width: 870px;
+  height: 350px;
+}
+
+.social-recruitment_office-environmentImg4 {
+  width: 360px;
+  height: 720px;
+}
+
+/* 社会招聘-form */
+.social-recruitment_form-position {
+  margin: 50px auto 70px;
+  width: 1200px;
+}
+
+.social-recruitment_form-position-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.social-recruitment_form-position-headerLeft {
+  display: flex;
+  align-items: center;
+}
+
+.select1 {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  padding: 0 10px;
+  width: 300px;
+  height: 40px;
+  border: 1px solid #E6E6E6;
+  cursor: pointer;
+}
+
+.select1 span {
+  font-size: 14px;
+  font-family: Source Han Sans CN;
+  font-weight: 400;
+  color: #999;
+}
+
+.bottom-arrows-icon {
+  transition: all 200ms;
+  width: 10px;
+}
+
+.select1-list {
+  display: none;
+  position: absolute;
+  top: 40px;
+  left: 0;
+  width: 100%;
+  outline: 1px solid #E6E6E6;
+  background-color: #fff;
+}
+
+.select1-list-item {
+  padding: 13px 10px;
+  font-size: 14px;
+  font-family: Source Han Sans CN;
+  font-weight: 400;
+  color: #999;
+}
+
+.select1:hover .select1-list {
+  display: block;
+}
+
+.select1:hover .bottom-arrows-icon {
+  transform: rotate(180deg);
+}
+
+.select1-list-item:hover {
+  color: #333;
+}
+
+.social-recruitment_form-position-headerLeft .select1:first-child {
+  margin-right: 20px;
+}
+
+.search1 {
+  display: flex;
+  align-items: center;
+  width: 300px;
+  height: 40px;
+  border: 1px solid #E6E6E6;
+}
+
+.search1-icon {
+  margin-left: 10px;
+  width: 14px;
+}
+
+.search1 input {
+  flex: 1;
+  margin: 0 10px;
+  height: 100%;
+  font-size: 14px;
+  font-family: Source Han Sans CN;
+  font-weight: 400;
+  color: #999;
+}
+
+.search1 button {
+  width: 80px;
+  height: 100%;
+  background-color: #A71A20;
+  font-size: 14px;
+  font-family: Source Han Sans CN;
+  font-weight: 400;
+  line-height: 40px;
+  outline: 1px solid #A71A20;
+  color: #fff;
+  cursor: pointer;
+}
+
+.social-recruitment_form-position-list {
+  margin-top: 30px;
+  padding: 40px 30px;
+  border: 1px solid #E5E5E5;
+}
+
+.social-recruitment_form-position-listItemBox {
+  overflow: hidden;
+}
+
+.social-recruitment_form-position-listItemBox:nth-child(n + 2) {
+  margin-top: 10px;
+}
+
+ .social-recruitment_form-position-listItem {
+  display: flex;
+  align-items: center;
+  padding: 16px 20px;
+  background-color: #F7F7F7;
+  cursor: pointer;
+}
+
+.social-recruitment_form-position-listItemTitle {
+  width: 219px;
+  font-size: 18px;
+  font-family: Source Han Sans CN;
+  font-weight: 500;
+  color: #262626;
+}
+
+.social-recruitment_form-position-listItemText {
+  font-size: 14px;
+  font-family: Source Han Sans CN;
+  font-weight: 400;
+  color: #999;
+}
+
+.social-recruitment_form-position-listItemArrowsIcon,
+.social-recruitment_form-position-listItemArrowsIcon2 {
+  width: 18px;
+}
+
+.social-recruitment_form-position-listItemArrowsIcon2 {
+  display: none;
+}
+
+.social-recruitment_form-position-listItemText1 {
+  width: 209px;
+}
+
+.social-recruitment_form-position-listItemText2 {
+  width: 216px;
+}
+
+.social-recruitment_form-position-listItemText3 {
+  width: 215px;
+}
+
+.social-recruitment_form-position-listItemText4 {
+  width: 203px;
+}
+
+.social-recruitment_form-position-listItemDetail {
+  display: none;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+  padding: 40px 100px 50px;
+  border: 1px  solid #E5E5E5;
+}
+
+.social-recruitment_form-position-listItemDetailCell {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #E6E6E6;
+}
+
+.social-recruitment_form-position-listItemDetailTitle {
+  font-size: 30px;
+  font-family: Source Han Sans CN;
+  font-weight: 500;
+  color: #262626;
+}
+
+.social-recruitment_form-position-listItemDetailText {
+  font-size: 14px;
+  font-family: Source Han Sans CN;
+  font-weight: 400;
+  color: #999999;
+}
+
+.social-recruitment_form-position-listItemDetailIntroTitle {
+  margin-top: 30px;
+  font-size: 16px;
+  font-family: Source Han Sans CN;
+  font-weight: 500;
+  line-height: 27px;
+  color: #404040;
+}
+
+.social-recruitment_form-position-listItemDetailIntroText {
+  font-size: 14px;
+  font-family: Source Han Sans CN;
+  font-weight: 400;
+  line-height: 30px;
+  color: #666;
+}
+
+.social-recruitment_form-position-listItemDetailBtn {
+  display: block;
+  margin: auto;
+  margin-top: 50px;
+  width: 200px;
+  height: 40px;
+  background-color: #A71A20;
+  font-size: 14px;
+  font-family: Source Han Sans CN;
+  font-weight: 400;
+  line-height: 40px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.social-recruitment_form-position-listItemBox_active .social-recruitment_form-position-listItem {
+  background-color: #A71A20;
+}
+
+.social-recruitment_form-position-listItemBox_active .social-recruitment_form-position-listItem *{
+  color: #fff;
+}
+
+.social-recruitment_form-position-listItemBox_active .social-recruitment_form-position-listItemArrowsIcon {
+  display: none;
+}
+
+.social-recruitment_form-position-listItemBox_active .social-recruitment_form-position-listItemArrowsIcon2 {
+  display: block;
+}
+
+.social-recruitment_form-position-listItemBox_active .social-recruitment_form-position-listItemDetail {
+  display: block;
+}
+
+/* 社会招聘-在线应聘 */
+.social-recruitment_apply {
+  padding: 70px 0 100px;
+  background-color: #f7f7f7;
+}
+
+.social-recruitment_apply {
+  font-size: 40px;
+  font-family: Source Han Sans CN;
+  font-weight: 500;
+  text-align: center;
+  color: #262626;
+}
+
+.social-recruitment_apply-cell {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 40px auto 0;
+  width: 764px;
+}
+
+.social-recruitment_apply-inputBox {
+  display: flex;
+  align-items: center;
+}
+
+.social-recruitment_apply-inputBox span {
+  margin-right: 17px;
+  font-size: 16px;
+  font-family: Source Han Sans CN;
+  font-weight: 400;
+  color: #404040;
+}
+
+.social-recruitment_apply-inputBox input {
+  box-sizing: border-box;
+  padding: 0 10px;
+  width: 300px;
+  height: 50px;
+  border: 1px solid #E6E6E6;
+  font-size: 14px;
+  font-family: Source Han Sans CN;
+  font-weight: 400;
+  color: #262626;
+}
+
+.social-recruitment_apply-inputBox input::placeholder {
+  color: #ccc;
+}
+
+.social-recruitment_apply-cell .social-recruitment_apply-inputBox:first-child {
+  margin-right: 30px;
+}
+
+.social-recruitment_apply-cell2 {
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  margin: 20px auto 0;
+  width: 764px;
+}
+
+.social-recruitment_apply-cell2 span {
+  margin-top: 10px;
+  margin-right: 17px;
+  font-size: 16px;
+  font-family: Source Han Sans CN;
+  font-weight: 400;
+  white-space: nowrap;
+  color: #404040;
+}
+
+.social-recruitment_apply-textareaBox {
+  box-sizing: border-box;
+  padding: 18px 10px;
+  width: 722px;
+  height: 100px;
+  border: 1px solid #E6E6E6;
+  background-color: #fff;
+}
+
+.social-recruitment_apply-textareaBox textarea {
+  width: 100%;
+  height: 100%;
+  font-size: 14px;
+  font-family: Source Han Sans CN;
+  font-weight: 400;
+  color: #262626;
+}
+
+.social-recruitment_apply-textareaBox textarea::placeholder {
+  color: #ccc;
+}
+
+.social-recruitment_apply-btn {
+  display: block;
+  margin: 30px auto 0;
+  width: 300px;
+  height: 50px;
+  background-color: #A71A20;
+  font-size: 20px;
+  font-family: Source Han Sans CN;
+  font-weight: 400;
+  line-height: 50px;
+  color: #fff;
+}
+
+/* 校园招聘 */
+.campus-recruitment-title {
+  margin-top: 68px;
+  font-size: 40px;
+  font-family: Source Han Sans CN;
+  font-weight: 500;
+  text-align: center;
+  color: #262626;
+}
+
+.campus-recruitmen-nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.campus-recruitmen-navItem {
+  width: 160px;
+  height: 45px;
+  border-radius: 27.5px;
+  font-size: 18px;
+  font-family: Source Han Sans CN;
+  font-weight: 400;
+  line-height: 45px;
+  text-align: center;
+  color: #262626;
+  cursor: pointer;
+}
+
+.campus-recruitmen-navItem:nth-child(n + 2) {
+  margin-left: 20px;
+}
+
+.campus-recruitmen-navItem_active {
+  background-color: #A71A20;
+  color: #fff;
+}
+
+/* 校园招聘-学校 */
+.campus-recruitment-swiperBox {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 40px auto 0;
+  width: 1200px;
+}
+
+.campus-recruitment-swiperNavigationNext,
+.campus-recruitment-swiperNavigationPrev {
+  width: 50px;
+  height: 80px;
+  outline: none;
+}
+
+.campus-recruitment-swiper {
+  width: 1020px;
+  height: 300px;
+}
+
+.campus-recruitment-swiper .swiper-slide {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+  border: 1px solid #E6E6E6;
+  font-size: 0;
+}
+
+.campus-recruitment_school-logo {
+  width: 130px;
+  height: 130px;
+  object-fit: contain;
+}
+
+.campus-recruitment-swiperSlideTitle {
+  margin-top: 35px;
+  font-size: 16px;
+  font-family: Source Han Sans CN;
+  font-weight: 500;
+  color: #262626;
+}
+
+.campus-recruitment-swiperSlideText {
+  margin-top: 10px;
+  font-size: 14px;
+  font-family: Source Han Sans CN;
+  font-weight: 400;
+  text-align: center;
+  color: #999;
+}
+
+.campus-recruitment-progressBox {
+  box-sizing: border-box;
+  margin-top: 72px;
+  padding: 100px 0;
+  height: 600px;
+  background-image: url('/assets/imgs/1920-600_2.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.campus-recruitment-progress {
+  margin: auto;
+  width: 1030px;
+  height: 105px;
+  background-image: url('/assets/imgs/1030-105.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.campus-recruitment-progress {
+  position: relative;
+}
+
+.campus-recruitment-progressCell {
+  position: absolute;
+  top: -40px;
+  left: 156px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 767px;
+}
+
+.campus-recruitment-progressItem {
+  text-align: center;
+  font-size: 0;
+}
+
+.campus-recruitment-progressItemImg {
+  width: 80px;
+  height: 80px;
+}
+
+.campus-recruitment-progressItemTitle {
+  margin-top: 20px;
+  font-size: 18px;
+  font-family: Source Han Sans CN;
+  font-weight: 400;
+  color: #fff;
+}
+
+.campus-recruitment-progressCell2 {
+  position: absolute;
+  top: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 1110px;
+}
+
+.campus-recruitment-progressCell2 .campus-recruitment-progressItem:nth-child(2) {
+  margin-left: 30px;
+}
+
+.campus-recruitment-formBox {
+}
+
+.campus-recruitment-form {
+  box-sizing: border-box;
+  margin: -267px auto 0;
+  padding: 40px 30px;
+  width: 1200px;
+  height: 600px;
+  background-color: #fff;
+  box-shadow: 2px 2px 20px 1px rgba(0, 0, 0, 0.2);
+}
+
+.campus-recruitment-form .social-recruitment_form-position {
+  margin: 0;
+  width: auto;
+}
+
+.campus-recruitment-form .social-recruitment_form-position-list {
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+  padding: 0;
+  max-height: 440px;
+  border: none;
+}
+
+.campus-recruitment-form .social-recruitment_form-position-list::-webkit-scrollbar {
+  display: none;
+}
+
+.campus-recruitment-formBox .social-recruitment_apply {
+  background-color: transparent;
+}

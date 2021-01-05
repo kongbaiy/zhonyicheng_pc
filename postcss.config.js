@@ -5,11 +5,8 @@ module.exports = {
         grid: true
     },
     "postcss-px-to-viewport": {
-      // viewportWidth: 1349,
       viewportWidth: 1920,
-      // viewportWidth: 1170,
-      // viewportWidth: 750,
-      viewportHeight: 1334,
+      viewportHeight: 722,
       unitPrecision: 3,
       viewportUnit: 'vw',
       selectorBlackList: ['.ignore', '.hairlines'],

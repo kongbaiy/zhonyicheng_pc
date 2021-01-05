@@ -1,96 +1,182 @@
-import '../scss/yatian.scss'
+import '../scss/yatian.scss';
+import '../css/home.css';
+
 $(function(){
-    //返回顶部
-    $('.returnTop').on('click',function(){
-        $('body').animate({ scrollTop: 0 }, 1000);
-    })
-    //首页hover事件
-    $(".index").hover(function(){
-        $(".nav-content").css("display","block")
-    },function(){
-        $(".nav-content").css("display","none")
-    })
-    //兼容手机端滚动隐藏首页hover的内容/返回顶部透明
-    $(window).on("scroll",function(){
-        $(".nav-content").css("display","none")
+  // banner
+  var bannerIndex = 0;
+	var banner = new Swiper('.banner', {
+    direction: 'vertical',
+		autoplay: 5000,
+		loop: true,
+		pagination: {
+			el: '.banner-pagination',
+			clickable: true,
+		},
+		on: {
+			slideChangeTransitionEnd() {
+				bannerIndex = this.realIndex;
+			}
+		},
+		a11y: {
+			prevSlideMessage: 'Previous slide',
+			nextSlideMessage: 'Next slide',
+			firstSlideMessage: 'This is the first slide',
+			lastSlideMessage: 'This is the last slide',
+			paginationBulletMessage: 'Go to slide ' + (bannerIndex + 1),
+			notificationClass: 'swiper-notification',
+			containerMessage: 'This is a swiper',
+			containerRoleDescriptionMessage: 'banner', //aria-role-description
+			itemRoleDescriptionMessage: 'slider',
+		}
+  });
 
-        $('#hhService').css('opacity','.6')
-        let timer=setTimeout(function(){
-            $('#hhService').css('opacity','1')
-        },1000)
+  // 通知
+  var dynamicIndex = 0;
+	var dynamic = new Swiper('.dynamic', {
+    direction: 'vertical',
+		autoplay: 5000,
+		loop: true,
+		on: {
+			slideChangeTransitionEnd() {
+				dynamicIndex = this.realIndex;
+			}
+		},
+		a11y: {
+			prevSlideMessage: 'Previous slide',
+			nextSlideMessage: 'Next slide',
+			firstSlideMessage: 'This is the first slide',
+			lastSlideMessage: 'This is the last slide',
+			paginationBulletMessage: 'Go to slide ' + (dynamicIndex + 1),
+			notificationClass: 'swiper-notification',
+			containerMessage: 'This is a swiper',
+			containerRoleDescriptionMessage: 'banner', //aria-role-description
+			itemRoleDescriptionMessage: 'slider',
+		}
+  });
 
-        $('#collapse').addClass("collapsed")
-        $('#collapse').attr("aria-expanded",false)
-        $("#bs-example-navbar-collapse-1").removeClass("in")
-        $("#bs-example-navbar-collapse-1").attr("aria-expanded",false)
+  // 经典案例
+  var classicCaseIndex = 0;
+	var classicCase = new Swiper('.classic-case-listBox', {
+		autoplay: 5000,
+		loop: true,
+		on: {
+			slideChangeTransitionEnd() {
+				dynamicIndex = this.realIndex;
+			}
+    },
+    navigation: {
+			nextEl: '.classic-case-swiperNavigationNext',
+			prevEl: '.classic-case-swiperNavigationPrev',
+		},
+		a11y: {
+			prevSlideMessage: 'Previous slide',
+			nextSlideMessage: 'Next slide',
+			firstSlideMessage: 'This is the first slide',
+			lastSlideMessage: 'This is the last slide',
+			paginationBulletMessage: 'Go to slide ' + (classicCaseIndex + 1),
+			notificationClass: 'swiper-notification',
+			containerMessage: 'This is a swiper',
+			containerRoleDescriptionMessage: 'banner', //aria-role-description
+			itemRoleDescriptionMessage: 'slider',
+		}
+  });
 
-      })
-    //防止刷新导航栏激活状态样式回到首页
-    $('header li').eq(sessionStorage.getItem('menu')).addClass('active').siblings().removeClass('active')
-    //导航栏激活样式 
-    $('header li').on('click',function(){
-        $(this).addClass('active')
-        $(this).siblings().removeClass("active")
-        let index=$(this).index()
-        sessionStorage.setItem('menu',index)
-    })
-    //手机端点击链接后自动收缩导航按钮
-    $(".nav > li > a").click(function(){
-        $('#collapse').addClass("collapsed")
-        $('#collapse').attr("aria-expanded",false)
-        $("#bs-example-navbar-collapse-1").removeClass("in")
-        $("#bs-example-navbar-collapse-1").attr("aria-expanded",false)
-    })
-    //检测hash地址变化跳转对应内容
-    $(window).on('hashchange',link)
-    link()
-/*     $("#collapse").on('click',function(){ 
-        console.log($('#bs-example-navbar-collapse-1').hasClass("in"))
-        console.log(!$('#bs-example-navbar-collapse-1').hasClass("in"))
-        if(!$('#bs-example-navbar-collapse-1').hasClass("in")){
-            $('#collapse').addClass("collapsed")
-            $('#collapse').attr("aria-expanded",false)
-            $("#bs-example-navbar-collapse-1").removeClass("in")
-            $("#bs-example-navbar-collapse-1").attr("aria-expanded",false)
-            // debugger
-        }else{           
-            $('#collapse').removeClass("collapsed")
-            $('#collapse').attr("aria-expanded",true)
-            $("#bs-example-navbar-collapse-1").addClass("in")
-            $("#bs-example-navbar-collapse-1").attr("aria-expanded",true)
-            console.log($('#bs-example-navbar-collapse-1').hasClass("in"))
-            // debugger
-        }
-        // debugger
-    }) */
-/*     $("#collapse").toggle(
-        function(){
-            $('#collapse').removeClass("collapsed")
-            $('#collapse').attr("aria-expanded",true)
-            $("#bs-example-navbar-collapse-1").addClass("in")
-            $("#bs-example-navbar-collapse-1").attr("aria-expanded",true)
-        },
-        function(){
-            $('#collapse').addClass("collapsed")
-            $('#collapse').attr("aria-expanded",false)
-            $("#bs-example-navbar-collapse-1").removeClass("in")
-            $("#bs-example-navbar-collapse-1").attr("aria-expanded",false)
-        }
-      ) */
-})
-//封装跳转页面函数
-function link(){
-    let index=location.hash.indexOf('?')
-    let hash=index !=-1?location.hash.substr(0,index):location.hash
-    switch(hash){    
-        case '#caseDetails':$('#root').load('./caseDetails.html');break; 
-        case '#caseCenter':$('#root').load('./caseCenter.html');break; 
-        case '#serviceCenter':$('#root').load('./serviceCenter.html');break; 
-        case '#solution':$('#root').load('./solution.html');break;   
-        case '#newsCenter':$('#root').load('./newsCenter.html');break;
-        case '#newsDetails':$('#root').load('./newsDetails.html');break;
-        case '#aboutUs':$('#root').load('./aboutUs.html');break;
+  $('.classic-case-li').on('click', function()  {
+    var index = $(this).index();
 
-        default:$('#root').load('./yatian.html');break;
-    }
-}
+    $('.classic-case-li').removeClass('classic-case-li_active');
+    $(this).addClass('classic-case-li_active');
+  });
+
+  // 公司业务
+  var companybusinessIndex = 0;
+	var companybusiness = new Swiper('.company-business-list', {
+		autoplay: 5000,
+		loop: true,
+		on: {
+			slideChangeTransitionEnd() {
+				companybusinessIndex = this.realIndex;
+			}
+    },
+    navigation: {
+			nextEl: '.company-business-swiperNavigationNext',
+			prevEl: '.company-business-swiperNavigationPrev',
+		},
+		a11y: {
+			prevSlideMessage: 'Previous slide',
+			nextSlideMessage: 'Next slide',
+			firstSlideMessage: 'This is the first slide',
+			lastSlideMessage: 'This is the last slide',
+			paginationBulletMessage: 'Go to slide ' + (companybusinessIndex + 1),
+			notificationClass: 'swiper-notification',
+			containerMessage: 'This is a swiper',
+			containerRoleDescriptionMessage: 'banner', //aria-role-description
+			itemRoleDescriptionMessage: 'slider',
+		}
+  });
+
+  // 公司优势
+  $('.company-advantage-listItem').on('click', function() {
+    $('.company-advantage-listItem').removeClass('company-advantage-listItem_active');
+    $(this).addClass('company-advantage-listItem_active');
+  });
+
+  var companyAdvantageIndex = 0;
+	var companyAdvantage = new Swiper('.company-advantage-swiper', {
+		autoplay: 5000,
+		loop: true,
+		on: {
+			slideChangeTransitionEnd() {
+				companyAdvantageIndex = this.realIndex;
+			}
+    },
+    navigation: {
+			nextEl: '.company-advantage-navigationNext',
+			prevEl: '.company-advantage-navigationPrev',
+		},
+		a11y: {
+			prevSlideMessage: 'Previous slide',
+			nextSlideMessage: 'Next slide',
+			firstSlideMessage: 'This is the first slide',
+			lastSlideMessage: 'This is the last slide',
+			paginationBulletMessage: 'Go to slide ' + (companyAdvantageIndex + 1),
+			notificationClass: 'swiper-notification',
+			containerMessage: 'This is a swiper',
+			containerRoleDescriptionMessage: 'banner', //aria-role-description
+			itemRoleDescriptionMessage: 'slider',
+		}
+  });
+
+  // 荣誉墙
+  var honorWallIndex = 0;
+	var honorWall = new Swiper('.honor-wall-swiper', {
+		autoplay: 5000,
+		loop: true,
+		on: {
+			slideChangeTransitionEnd() {
+				honorWallIndex = this.realIndex;
+			}
+    },
+    navigation: {
+			nextEl: '.honor-wall-navigationNext',
+			prevEl: '.honor-wall-navigationPrev',
+		},
+		a11y: {
+			prevSlideMessage: 'Previous slide',
+			nextSlideMessage: 'Next slide',
+			firstSlideMessage: 'This is the first slide',
+			lastSlideMessage: 'This is the last slide',
+			paginationBulletMessage: 'Go to slide ' + (honorWallIndex + 1),
+			notificationClass: 'swiper-notification',
+			containerMessage: 'This is a swiper',
+			containerRoleDescriptionMessage: 'banner', //aria-role-description
+			itemRoleDescriptionMessage: 'slider',
+		}
+  });
+
+  // 新闻
+  $('.news-nav-item').on('click', function() {
+    $('.news-nav-item').removeClass('news-nav-item_active');
+    $(this).addClass('news-nav-item_active');
+  });
+});
