@@ -350,6 +350,14 @@
   cursor: pointer;
 }
 
+.development-history-swiperNext:hover {
+  content: url(/assets/imgs/50-50_1_active.png);
+}
+
+.development-history-swiperPrev:hover {
+  content: url(/assets/imgs/50-50_2_active.png);
+}
+
 .development-history {
   position: relative;
   margin: 60px auto 100px;
