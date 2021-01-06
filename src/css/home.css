@@ -666,6 +666,7 @@ nav {
 }
 
 .company-advantage-swiperBox {
+  box-sizing: border-box;
   position: absolute;
   bottom: 45px;
   right: 190px;
