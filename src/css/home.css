@@ -483,6 +483,7 @@ nav {
   transition: all 200ms;
   width: 300px;
   background-color: #fff;
+  font-size: 0;
   cursor: pointer;
 }
 
@@ -789,6 +790,7 @@ nav {
   margin-right: 20px;
   width: 400px;
   border-radius: 15px;
+  font-size: 0;
 }
 
 .honor-wall-swiperSlideItem:last-child {
@@ -837,9 +839,9 @@ nav {
   margin: auto;
   padding: 20px;
   width: 1400px;
-  height: 310px;
   background-color: #fff;
   box-shadow: 2px 2px 10px 1px rgba(0, 0, 0, 0.2);
+  font-size: 0;
 }
 
 .coopreation-company-item {
@@ -939,6 +941,7 @@ nav {
   margin-right: 30px;
   width: 460px;
   border: 1px solid #E6E6E6;
+  font-size: 0;
 }
 
 .news-list-firstItemImg {

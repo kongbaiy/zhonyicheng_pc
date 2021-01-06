@@ -70,6 +70,7 @@
   margin-right: 60px;
   width: 360px;
   background-color: #F7F7F7;
+  font-size: 0;
 }
 
 .developing-plan-listItem:last-child {
