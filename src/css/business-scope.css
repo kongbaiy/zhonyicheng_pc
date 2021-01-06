@@ -29,54 +29,75 @@
   border-radius: 50%;
 }
 
-.business-scope-list {
+.business-scope-list,
+.business-scope-list2 {
   overflow: hidden;
   margin-top: 30px;
 }
 
-.business-scope-listItem {
+.business-scope-listItem,
+.business-scope-list2Item {
   display: flex;
   margin-top: 30px;
   background-color: #F7F7F7;
 }
 
-.business-scope-listItem:nth-child(2n){
+.business-scope-listItem:nth-child(2n),
+.business-scope-list2Item:nth-child(2n) {
   flex-direction: row-reverse;
 }
 
-.business-scope-listItem:nth-child(2n) .business-scope-listItemTag  {
+.business-scope-listItem:nth-child(2n) .business-scope-listItemTag {
   flex-direction: row-reverse;
   justify-content: flex-end;
 }
 
-.business-scope-listItemImg {
+.business-scope-listItemImg,
+.business-scope-listItem2Img {
   width: 800px;
   height: 580px;
   object-fit: cover;
 }
 
-.business-scope-listItemInfo {
+.business-scope-listItemInfo,
+.business-scope-listItem2Info {
   flex: 1;
   padding: 60px 45px 60px 70px;
 }
 
-.business-scope-listItemType {
+.business-scope-listItemType,
+.business-scope-list2ItemType {
   position: relative;
   padding-top: 20px;
   font-size: 18px;
   font-family: Source Han Sans CN;
   font-weight: 400;
+}
+
+.business-scope-listItemType {
   color: #36383B;
 }
 
-.business-scope-listItemType::before {
+.business-scope-list2ItemType {
+  color: #A71A20;
+}
+
+.business-scope-listItemType::before,
+.business-scope-list2ItemType::before {
   content: "";
   position: absolute;
   top: 0;
   left: 0;
   width: 100px;
   height: 4px;
+}
+
+.business-scope-listItemType::before {
   background-color: #262626;
+}
+
+.business-scope-list2ItemType::before {
+  background-color: #A71A20;
 }
 
 .business-scope-listItemEnglsh {
@@ -87,6 +108,7 @@
   line-height: 72px;
   text-transform: uppercase;
   color: #262626;
+
 }
 
 .business-scope-listItemTitle {
@@ -122,4 +144,66 @@
 
 .business-scope-listItemTag span:last-child {
   margin-right: 0;
+}
+
+.business-scope-list2Item {
+  position: relative;
+}
+
+.business-scope-list2ItemTitle {
+  margin-top: 8px;
+  font-size: 24px;
+  font-family: Source Han Serif SC;
+  font-weight: 500;
+  color: #A71A20;
+}
+
+.business-scope-list2ItemIcon {
+  margin-top: 40px;
+  width: 100px;
+  height: 100px;
+}
+
+.business-scope-list2ItemTagBox {
+  overflow: hidden;
+  margin-top: 20px;
+}
+
+.business-scope-list2ItemTag {
+  float: left;
+  display: flex;
+  align-items: center;
+  width: 33.3%;
+  font-size: 20px;
+  font-family: Source Han Sans CN;
+  font-weight: bold;
+  color: #A71A20;
+}
+
+.business-scope-list2ItemTag:nth-child(n + 4) {
+  margin-top: 20px;
+}
+
+.business-scope-list2ItemTagWire {
+  margin-right: 10px;
+  width: 30px;
+  height: 2px;
+  background-color: #A71A20;
+}
+
+.business-scope-list2ItemEnglsh {
+  margin-top: 30px;
+  font-size: 30px;
+  font-family: Source Han Serif SC;
+  font-weight: bold;
+  line-height: 44px;
+  text-transform: uppercase;
+  color: #A71A20;
+}
+
+.business-scope-list2ItemArrowsIcon {
+  position: absolute;
+  bottom: 50px;
+  right: 60px;
+  height: 20px;
 }
