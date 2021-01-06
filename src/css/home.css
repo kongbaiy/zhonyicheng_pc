@@ -338,11 +338,11 @@ nav {
 }
 
 .classic-case-swiperNavigationNext:hover {
-  content: url(/assets/imgs/left_arrows_btn1_active.png);
+  content: url(/assets/imgs/left_arrows_btn3_active.png);
 }
 
 .classic-case-swiperNavigationPrev:hover {
-  content: url(/assets/imgs/right_arrows_btn1_active.png);
+  content: url(/assets/imgs/right_arrows_btn3_active.png);
 }
 
 .classic-case-swiperMoreLink {
@@ -705,10 +705,19 @@ nav {
 .company-advantage-navigation img {
   width: 16px;
   outline: none;
+  cursor: pointer;
 }
 
 .company-advantage-navigation img:first-child {
   margin-right: 30px;
+}
+
+.company-advantage-navigationNext:hover {
+  content: url(../assets/imgs/16-16_1_active.png);
+}
+
+.company-advantage-navigationPrev:hover {
+  content: url(../assets/imgs/16-16_2_active.png);
 }
 
 .honor-wallBox {
