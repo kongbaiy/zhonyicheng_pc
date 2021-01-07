@@ -203,6 +203,11 @@
   width: 100%;
 }
 
+#allmap {
+  height: 500px;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
 .filiale-box {
   height: 610px;
   background-image: url('/assets/imgs/filiale.jpg');
@@ -215,7 +220,7 @@
   overflow: hidden;
   box-sizing: border-box;
   position: relative;
-  z-index: 2;
+  z-index: 30;
   top: -100px;
   margin: auto;
   padding: 30px 20px;

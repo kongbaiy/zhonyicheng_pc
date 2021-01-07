@@ -37,9 +37,11 @@
 
 .business-scope-listItem,
 .business-scope-list2Item {
+  position: relative;
   display: flex;
   margin-top: 30px;
   background-color: #F7F7F7;
+  cursor: pointer;
 }
 
 .business-scope-listItem:nth-child(2n),
@@ -146,8 +148,8 @@
   margin-right: 0;
 }
 
-.business-scope-list2Item {
-  position: relative;
+.business-scope-listItem2Info {
+  display: none;
 }
 
 .business-scope-list2ItemTitle {
@@ -202,8 +204,18 @@
 }
 
 .business-scope-list2ItemArrowsIcon {
+  display: none;
   position: absolute;
   bottom: 50px;
   right: 60px;
   height: 20px;
+}
+
+.business-scope-listItem:hover .business-scope-listItemInfo {
+  display: none;
+}
+
+.business-scope-listItem:hover .business-scope-listItem2Info,
+.business-scope-listItem:hover .business-scope-list2ItemArrowsIcon {
+  display: block;
 }

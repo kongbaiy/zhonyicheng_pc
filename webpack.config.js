@@ -124,7 +124,7 @@ module.exports = {
       chunkModules: false,
       timings: true
     },
-    host: '0.0.0.0',
+    host: 'localhost',
     port: '8090',
     overlay: true, //出现错误之后会在页面中出现遮罩层提示
     open: true//运行之后自动打开本地浏览器

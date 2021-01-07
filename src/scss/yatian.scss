@@ -390,7 +390,10 @@ footer {
   padding: 10px 20px;
   width: 259px;
   min-height: 200px;
-  border-right: 1px solid #fff;
+  background-image: url(../assets/imgs/1-200.png);
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: contain;
   text-align: center;
 }
 
@@ -414,7 +417,7 @@ footer {
 
 
 .footer-service-item:last-child {
-  border-right: 0;
+  background-image: none;
 }
 
 .footer-service-qrCodeImg {

@@ -55,24 +55,39 @@
   margin-right: 25px;
   width: 450px;
   background-color: #F7F7F7;
-  font-size: 0;
+  cursor: pointer;
 }
 
 .list-item:nth-child(3n) {
   margin-right: 0;
 }
 
-.list-item:hover {
-  box-shadow: 2px 2px 20px 1px rgba(0, 0, 0, 0.2);
+.list-item:hover .list-item-title {
+  font-weight: bold;
+  color: #A71A20;
 }
 
-.list-item:hover .list-item-title {
-  color: #A71A20;
+.list-item-imgBox {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  font-size: 0;
+}
+
+.list-item-imgBox::before {
+  display: none;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
 }
 
 .list-item-img {
   width: 100%;
-  height: 300px;
+  height: 100%;
   object-fit: cover;
 }
 
@@ -117,6 +132,14 @@
   align-items: center;
   justify-content: center;
   margin: 40px auto 70px;
+}
+
+.list-item:hover {
+  box-shadow: 2px 2px 20px 1px rgba(0, 0, 0, 0.2);
+}
+
+.list-item:hover .list-item-imgBox::before{
+  display: block;
 }
 
 /* 合作伙伴 */
