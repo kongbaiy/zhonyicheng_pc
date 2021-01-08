@@ -15,7 +15,8 @@ $(function(){
   var developmentHistoryIndex = 0;
 	var developmentHistory = new Swiper('.development-history-swiper', {
 		spaceBetween: 0,
-		slidesPerView: 5,
+    slidesPerView: 5,
+	  centeredSlides : true,
 		freeMode: true,
 		watchSlidesVisibility: true,
 		watchSlidesProgress: true,
@@ -36,6 +37,7 @@ $(function(){
         var index = this.clickedIndex;
         $('.development-history-swiper .swiper-slide').removeClass('development-history-swiperSlide_active');
         $('.development-history-swiper .swiper-slide').eq(index).addClass('development-history-swiperSlide_active');
+        developmentHistory.slideTo(index);
       }
     },
 		a11y: {

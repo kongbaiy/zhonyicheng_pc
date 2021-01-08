@@ -94,12 +94,12 @@ module.exports = {
       filename: "css/[name].css"
     }),
     //全局引入jquery
-    new webpack.ProvidePlugin({
-      $: "jquery",
-      jQuery: "jquery",
-      jquery: "jquery",
-      "window.jQuery": "jquery"
-    }),
+    // new webpack.ProvidePlugin({
+    //   $: "jquery",
+    //   jQuery: "jquery",
+    //   jquery: "jquery",
+    //   "window.jQuery": "jquery"
+    // }),
     //作用相当于copy-webpack-plugin
     new TransferWebpackPlugin([
       {

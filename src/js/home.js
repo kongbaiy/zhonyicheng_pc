@@ -117,8 +117,12 @@ $(function(){
 
   // 公司优势
   $('.company-advantage-listItem').on('click', function() {
+    var title = $(this).find('.company-advantage-listItemTtitle').text();
+    var text = $(this).find('.company-advantage-listItemText').text();
+
     $('.company-advantage-listItem').removeClass('company-advantage-listItem_active');
     $(this).addClass('company-advantage-listItem_active');
+    $('.company-advantage-swiperSlideTitle').text(text);
   });
 
   var companyAdvantageIndex = 0;

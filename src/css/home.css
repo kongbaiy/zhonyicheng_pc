@@ -635,7 +635,7 @@ nav {
 }
 
 .company-advantage-listItemTitle {
-  font-size: 16px;
+  font-size: 18px;
   font-family: Source Han Sans CN;
   font-weight: 500;
   line-height: 32px;
@@ -643,7 +643,7 @@ nav {
 }
 
 .company-advantage-listItemText {
-  font-size: 12px;
+  font-size: 16px;
   font-family: Source Han Sans CN;
   font-weight: 400;
   line-height: 32px;
@@ -729,8 +729,7 @@ nav {
 }
 
 .honor-wall {
-  padding: 70px;
-  height: 830px;
+  padding: 70px 0 120px;
   background-image: url('/assets/imgs/1920-814.jpg');
   background-repeat: no-repeat;
   background-position: center;
