@@ -226,6 +226,7 @@ nav {
 .video-box video {
   width: 100%;
   height: 100%;
+  object-fit: cover;
 }
 
 .about-us {
@@ -1144,7 +1145,6 @@ nav {
   z-index: 15;
   padding: 20px;
   width: 60%;
-  height: 70%;
   background-color: #fff;
   border-radius: 15px;
 }
@@ -1154,6 +1154,7 @@ nav {
 }
 
 .popup-video {
+  outline: none;
   width: 100%;
   height: 100%;
 }
