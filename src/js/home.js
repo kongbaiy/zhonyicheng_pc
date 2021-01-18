@@ -14,7 +14,9 @@ $(function(){
 		},
 		on: {
 			slideChangeTransitionEnd() {
-				bannerIndex = this.realIndex;
+        bannerIndex = this.realIndex;
+        $('.banner-num').text(bannerIndex + 1);
+        $('.banner-total').text(5);
 			}
 		},
 		a11y: {
@@ -30,28 +32,12 @@ $(function(){
 		}
   });
 
-  // 通知
-  var dynamicIndex = 0;
-	var dynamic = new Swiper('.dynamic', {
-    direction: 'vertical',
-		autoplay: 5000,
-		loop: true,
-		on: {
-			slideChangeTransitionEnd() {
-				dynamicIndex = this.realIndex;
-			}
-		},
-		a11y: {
-			prevSlideMessage: 'Previous slide',
-			nextSlideMessage: 'Next slide',
-			firstSlideMessage: 'This is the first slide',
-			lastSlideMessage: 'This is the last slide',
-			paginationBulletMessage: 'Go to slide ' + (dynamicIndex + 1),
-			notificationClass: 'swiper-notification',
-			containerMessage: 'This is a swiper',
-			containerRoleDescriptionMessage: 'banner', //aria-role-description
-			itemRoleDescriptionMessage: 'slider',
-		}
+  // 关于我们
+  $('.video-play-icon').on('click', function() {
+    $('.popup-bg, .popup').show();
+  });
+  $('.popup-bg, .popup-video-close').on('click', function() {
+    $('.popup-bg, .popup').hide();
   });
 
   // 经典案例
@@ -61,7 +47,7 @@ $(function(){
 		loop: true,
 		on: {
 			slideChangeTransitionEnd() {
-				dynamicIndex = this.realIndex;
+				classicCaseIndex = this.realIndex;
 			}
     },
     navigation: {

@@ -61,9 +61,9 @@
                 </li>
               </ul>
             </div>
-            <div class="banner-date">
-              <p class="banner-date-month">02</p>
-              <p class="banner-date-date">05</p>
+            <div class="banner-numBox">
+              <p class="banner-num"></p>
+              <p class="banner-total"></p>
             </div>
             <img src="../assets/imgs/banner_1.jpg" alt="" class="banner-img" />
           </div>
@@ -106,18 +106,17 @@
       </div>
 
       <div class="dynamic-box">
-        <img src="../assets/imgs/24-24.png" alt="" class="dynamic-icon" />
-        <div class="swiper-container dynamic">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide dynamic-item">
-              <span class="dynamic-item-status">最新签约</span>
-              <p class="dynamic-item-text">
-                <span>恭喜某某公司签约成功成为战略合作伙伴！  恭喜某某公司签约成功成为战略合作伙伴！  恭喜某某公司签约成功成为战略合作伙伴！  恭喜某某公司签约成功成为战略合作伙伴！</span>
-              </p>
-              <a href="">更多动态 >></a>
-            </div>
-          </div>
+        <div class="dynamic-iconBox">
+          <img src="../assets/imgs/24-24.png" alt="" class="dynamic-icon" />
+          <span class="dynamic-item-status">最新签约</span>
         </div>
+        <marquee class="dynamic-list" direction="left" loop="-1" onmousemove="this.stop()" onmouseout="this.start()">
+          <span class="dynamic-list-item">恭喜某某公司签约成功成为战略合作伙伴！</span>
+          <span class="dynamic-list-item">恭喜某某公司签约成功成为战略合作伙伴！</span>
+          <span class="dynamic-list-item">恭喜某某公司签约成功成为战略合作伙伴！</span>
+
+        </marquee>
+        <a href="">更多动态 >></a>
       </div>
 
       <!-- 关于我们 -->
@@ -530,6 +529,16 @@
          </div>
        </div>
      </div>
+
+     <div class="popup-bg">
+     </div>
+     <div class="popup">
+        <div class="popup-content">
+          <video controls="" autoplay="" name="media" class="popup-video"><source src="http://video.rc-sp.com/job_%E8%93%89%E5%9F%8E%E8%80%81%E5%A6%88%E3%80%90%E5%AE%A3%E4%BC%A0%E7%89%87%E3%80%91.mp4" type="video/mp4"></video>
+            <div class="popup-video-close">x</div>
+        </div>
+      </div>
+
 
      <footer>
         <div class="footer-header">
