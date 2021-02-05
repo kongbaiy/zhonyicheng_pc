@@ -34,12 +34,13 @@ $(function(){
 
   // 关于我们
   $('.video-play-icon').on('click', function() {
-    $('.popup-bg, .popup').show();
+	$('.popup-bg, .popup').show();
+	$('.popup-video').trigger('play');
   });
   $('.popup-bg, .popup-video-close').on('click', function() {
 	  console.log($('.popup-video'));
 	$('.popup-bg, .popup').hide();
-	$('.popup-video').pause();
+	$('.popup-video').trigger('pause');
   });
 
   // 经典案例
